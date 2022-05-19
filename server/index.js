@@ -1,7 +1,7 @@
 const express = require("express"),
   app = express(),
-  bodyParser = require("body-parser");
-Service = require("./routes/short.js");
+  bodyParser = require("body-parser"),
+  Service = require("./routes/short.js");
 
 app.use(bodyParser.json());
 app.set("/v0.1/", Service);
