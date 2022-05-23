@@ -16,26 +16,50 @@
 .App-link {
   color: #61dafb;
 }
+
 .form{
   display: flex;
-  align-items: center;
+  width: 100vw;
+  justify-content: center;
 }
+
 #link {
-  font-size: larger;
-  padding: 5px 12px;
-  border-radius: 20px;
-  border: 0px;
-  margin: 0px 10px;
-  max-width: 100vw;
+  font-size: large;
+  padding: 1vh 12px;
+  border-radius: 20px 0px 0px 20px;
+  width: 50vw;
+  border: none;
+  outline:none;
 }
-#enter{
-  width: 100px;
+
+#button{
   font-size: large;
   font-weight: 600;
-  padding: 5px;
-  border-radius: 20px;
+  padding: 2vh 14px;
+  border-radius: 0px 20px 20px 0px;
   border: 0px;
-  margin: 0px 10px;
-  background-color: lime;
+  background-color: mediumseagreen;
   color: white;
+  cursor: pointer;
+}
+
+.arrow {
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 4px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+@media screen and (max-width: 768px) {
+  .title{
+    display: none;
+  }
+  #link {
+    width: 60vw;
+  }
 }
