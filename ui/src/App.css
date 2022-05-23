@@ -1,0 +1,65 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.form{
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+}
+
+#link {
+  font-size: large;
+  padding: 1vh 12px;
+  border-radius: 20px 0px 0px 20px;
+  width: 50vw;
+  border: none;
+  outline:none;
+}
+
+#button{
+  font-size: large;
+  font-weight: 600;
+  padding: 2vh 14px;
+  border-radius: 0px 20px 20px 0px;
+  border: 0px;
+  background-color: mediumseagreen;
+  color: white;
+  cursor: pointer;
+}
+
+.arrow {
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 4px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+@media screen and (max-width: 768px) {
+  .title{
+    display: none;
+  }
+  #link {
+    width: 60vw;
+  }
+}
