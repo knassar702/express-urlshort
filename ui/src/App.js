@@ -1,7 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
+import { useState } from 'react';
 
 function App() {
+  const [visible, setVisible]=useState(false);
   return (
     <div className="App App-header">
       <h3>
@@ -9,16 +11,16 @@ function App() {
       </h3>
       <form className="form">
         <input type="text" id="link" />
-        <input type="button" for="link" id="enter" value="Shorten"/>
+        <button type="button" id="button" onClick={()=> setVisible(!visible)} >
+          <span className='title'>Shorten</span> <i className="arrow right"></i>
+        </button>
       </form>
-      <a
+      
+      {visible && <a
         className="App-link"
-        href="https://reactjs.org"
-        target="_blank"
-        rel="noopener noreferrer"
       >
-        Learn React
-      </a>
+        [Show your result here]
+      </a>}
     </div>
   );
 }
